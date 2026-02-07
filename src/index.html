@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UniLink — Réseau social universitaire</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand__mark">U</div>
+          <div>
+            <p class="brand__name">UniLink</p>
+            <p class="brand__tag">Réseau social universitaire</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav__item nav__item--active">Feed</button>
+          <button class="nav__item">Clubs</button>
+          <button class="nav__item">Messages</button>
+          <button class="nav__item">Opportunités</button>
+          <button class="nav__item">Profil</button>
+        </nav>
+
+        <div class="sidebar__card">
+          <h3>Mode économie de données</h3>
+          <p>Texte uniquement, images compressées, synchronisation différée.</p>
+          <button class="ghost">Activer</button>
+        </div>
+
+        <div class="sidebar__footer">
+          <p class="muted">Offline-first • PWA prête</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Bonjour, Jo</h1>
+            <p class="muted">Universités • Clubs • Opportunités en temps réel</p>
+          </div>
+          <div class="topbar__actions">
+            <button class="chip">Pour toi</button>
+            <button class="chip chip--light">Ma faculté</button>
+            <button class="chip chip--light">Mes clubs</button>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero__content">
+            <h2>Le réseau qui connecte tous les étudiants congolais.</h2>
+            <p>
+              Découvre des clubs, des ressources, des évènements et des opportunités
+              sans passer par WhatsApp. Tout est organisé par université, faculté et
+              promotion.
+            </p>
+            <div class="hero__actions">
+              <button class="primary">Créer un post</button>
+              <button class="secondary">Explorer les clubs</button>
+            </div>
+            <div class="hero__stats">
+              <div>
+                <p class="stat">50K+</p>
+                <p class="muted">Étudiants actifs</p>
+              </div>
+              <div>
+                <p class="stat">1.2K</p>
+                <p class="muted">Clubs vérifiés</p>
+              </div>
+              <div>
+                <p class="stat">420</p>
+                <p class="muted">Bourses & stages</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__preview">
+            <div class="phone">
+              <div class="phone__header">
+                <span class="pill">Feed • Populaire</span>
+                <span class="pill pill--ghost">RDC</span>
+              </div>
+              <div class="feed-card">
+                <div class="feed-card__header">
+                  <span class="badge">Question</span>
+                  <span class="muted">Faculté de Génie • 2h</span>
+                </div>
+                <h3>Quelqu’un a un résumé sur l’énergie solaire en RDC ?</h3>
+                <p class="muted">12 réponses • 84 upvotes</p>
+              </div>
+              <div class="feed-card">
+                <div class="feed-card__header">
+                  <span class="badge badge--secondary">Annonce</span>
+                  <span class="muted">Club IA • 1j</span>
+                </div>
+                <h3>Hackathon inter-universitaire la semaine prochaine !</h3>
+                <p class="muted">Inscription ouverte • 220 participants</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="panel">
+            <h3>Feed intelligent</h3>
+            <p>
+              Filtre par université, faculté, promotion et clubs. Upvote/Downvote
+              pour faire émerger les meilleures réponses.
+            </p>
+            <div class="panel__meta">
+              <span>Pour toi</span>
+              <span>Inter-U</span>
+              <span>Populaire</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Clubs & communautés</h3>
+            <p>
+              Découverte instantanée de clubs, canaux d’annonces, discussions et
+              ressources partagées.
+            </p>
+            <div class="panel__meta">
+              <span>Annuaire</span>
+              <span>Rôles</span>
+              <span>Ressources</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Opportunités</h3>
+            <p>
+              Bourses, stages et événements visibles pour toutes les universités,
+              avec alertes personnalisées.
+            </p>
+            <div class="panel__meta">
+              <span>Alertes</span>
+              <span>Stages</span>
+              <span>Bourses</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="split">
+          <div class="split__panel">
+            <h3>Vérification étudiante</h3>
+            <p>
+              Email universitaire + carte étudiante. Badge vérifié pour renforcer la
+              confiance et la crédibilité.
+            </p>
+            <div class="checklist">
+              <div>
+                <span class="dot"></span>
+                <p>Onboarding clair en 4 étapes</p>
+              </div>
+              <div>
+                <span class="dot"></span>
+                <p>Profil complet, portfolio & stats</p>
+              </div>
+              <div>
+                <span class="dot"></span>
+                <p>Badges de contribution</p>
+              </div>
+            </div>
+          </div>
+          <div class="split__panel split__panel--accent">
+            <h3>Offline-first</h3>
+            <p>
+              Téléchargement automatique, cache intelligent et synchronisation en
+              différé dès que le WiFi est disponible.
+            </p>
+            <div class="sync">
+              <div>
+                <p class="stat">68%</p>
+                <p class="muted">Données économisées</p>
+              </div>
+              <div>
+                <p class="stat">24h</p>
+                <p class="muted">Lecture hors ligne</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div>
+            <h2>Prêt à connecter votre université ?</h2>
+            <p>
+              Une plateforme gratuite pour les étudiants, financée par des partenaires
+              et entreprises qui recrutent.
+            </p>
+          </div>
+          <button class="primary">Lancer l’application</button>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
